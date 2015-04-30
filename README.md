@@ -6,8 +6,8 @@
 - $ gem build yanlinpu_server.gemspec
 - $ gem install yanlinpu_server-0.0.1.ylp.gem
 
-####irb testing
-- $ require 'yanlinpu_server'
-- $ u = Yanlinpu::User.new({name:'yanlinpu',age:25,email:'yanlinpu66@163.com'})
-- $ u.myself
-- $ Yanlinpu::User.sing
+####open the server
+- $  nohup ruby drb_server.rb &
+
+####see the log
+- $ tail -f server_call_log.log

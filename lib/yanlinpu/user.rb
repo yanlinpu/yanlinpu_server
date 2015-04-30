@@ -1,5 +1,6 @@
 module Yanlinpu
   class User
+    include DRb::DRbUndumped#不让序列化
     attr_accessor :name, :email, :age
     def initialize(options)
       %w(name email age).each do |key|
