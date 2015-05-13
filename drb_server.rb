@@ -20,6 +20,9 @@ end
 class TestServer
   include ::MyDrbLogger
   include DRb::DRbUndumped
+  def remote_check
+	'server ok'
+  end
   def remote_user_sing(song)
     Yanlinpu::User.sing(song)
   end
