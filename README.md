@@ -11,3 +11,7 @@
 
 ####see the log
 - $ tail -f server_call_log.log
+
+####序列化
+- include DRb::DRbUndumped#不让序列化()
+- 可序列化（需要将不可序列化的attr_accessor转化为方法 可优化）
